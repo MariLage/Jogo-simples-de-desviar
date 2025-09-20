@@ -4,6 +4,7 @@ import random
 pygame.init();
 largura, altura = 400, 600;
 tela = pygame.display.set_mode((largura, altura));
+pygame.display.set_caption("Jogo Simples");
 clock = pygame.time.Clock();
 
 jogador = pygame.Rect(180, 500, 40, 40);
@@ -90,4 +91,5 @@ while True:
                 exit();
     
     pygame.display.flip();
+
     clock.tick(60);
